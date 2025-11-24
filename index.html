@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Heaven Donuts</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">🍩 Sweet Heaven</h1>
+  <nav>
+    <a href="#" data-tab="home" class="active">Início</a>
+    <a href="#" data-tab="menu">Cardápio</a>
+    <a href="#" data-tab="contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Início -->
+  <section id="home" class="tab active">
+    <div class="hero">
+      <h2 class="main-title">Donuts que derretem na boca</h2>
+      <div class="hero-donuts">
+        <div class="donut-circle circle1"></div>
+        <div class="donut-circle circle2"></div>
+        <div class="donut-circle circle3"></div>
+      </div>
+      <p>Artesanais, frescos e com cobertura irresistível!</p>
+      <button data-tab="menu">Ver Cardápio</button>
+    </div>
+  </section>
+
+  <!-- Cardápio -->
+  <section id="menu" class="tab">
+    <h2>Nosso Cardápio</h2>
+    
+    <!-- Cards existentes -->
+    <div class="cards">
+      <div class="card classic">
+        <img src="https://images.unsplash.com/photo-1626094309830-abbb0c99da4a?fm=jpg&crop=entropy&cs=tinysrgb&w=1080" alt="Donut morango">
+        <h3>Donut Morango</h3>
+        <p>Recheio de geleia natural e cobertura rosa cremosa.</p>
+        <div class="price">R$9,00</div>
+      </div>
+      <div class="card classic">
+        <img src="https://www.nomecomesnada.es/wp-content/uploads/2020/03/donuts-avena-chocolate-8-750x500.jpg" alt="Donut chocolate">
+        <h3>Dueto Chocolate</h3>
+        <p>Massa macia com cobertura de chocolate e granulado.</p>
+        <div class="price">R$10,00</div>
+      </div>
+      <div class="card classic">
+        <img src="https://png.pngtree.com/png-clipart/20250203/original/pngtree-realistic-pink-glazed-donut-stack-on-white-background-png-image_19692234.png" alt="Sortido">
+        <h3>Sortido Especial</h3>
+        <p>Caixa com 6 sabores sortidos.</p>
+        <div class="price">R$54,00</div>
+      </div>
+      <div class="card classic">
+        <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/2265236-rosquinhas-com-creme-de-chocolate-branco-e-acucar-granulado-gratis-foto.jpg" alt="Donut chocolate branco">
+        <h3>Choco Branco</h3>
+        <p>Delícia de chocolate branco com cobertura branca.</p>
+        <div class="price">R$11,00</div>
+      </div>
+    </div>
+
+    <!-- NOVAS SEÇÕES -->
+    <h2>Donuts Sazonais</h2>
+    <div class="cards seasonal">
+      <div class="card">
+        <img src="https://nutanabakery.com/cdn/shop/files/nutana-84.png?v=1761787224alt=" alt="Halloween Especial">
+        <h3>Halloween Especial</h3>
+        <p>Donut assustadoramente delicioso com cobertura laranja.</p>
+        <div class="price">R$12,00</div>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/cb/aa/f6/cbaaf6c693115ab4cdb67050fe72a491.jpg" alt="Natal Especial">
+        <h3>Natal Especial</h3>
+        <p>Com cobertura de Leite Ninho. </p>
+        <div class="price">R$13,00</div>
+      </div>
+    </div>
+
+    <h2>Donuts Salgados</h2>
+    <div class="cards savory">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/e7/4b/3b/e74b3bdb691c36d5610b02df2b1df79e.jpg" alt="Chedar e Bacon">
+        <h3>Donut Chedar e Bacon</h3>
+        <p>Recheio cremoso e sabor irresistível.</p>
+        <div class="price">R$14,00</div>
+      </div>
+      <div class="card">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/cb/83/05/donuts-salgado-bologna.jpg" alt="Sanduiche Presunto">
+        <h3>Donut Sanduiche Presunto</h3>
+        <p>Sabor clássico que todo mundo ama.</p>
+        <div class="price">R$15,00</div>
+      </div>
+    </div>
+
+    <h2>Mais Vendidos</h2>
+    <div class="cards best">
+      <div class="card">
+        <img src="https://goodcheapeats.com/wp-content/uploads/2021/05/Chocolate-Donuts-16.jpg" alt="Chocolate Triplo">
+        <h3>Donut Chocolate Triplo</h3>
+        <p>Chocolate em todas as camadas.</p>
+        <div class="price">R$16,00</div>
+      </div>
+      <div class="card">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/cb/81/28/donuts-recheado-de-morangohumm.jpg" alt="Donut Morango com leite ninho Brigadeiro branco">
+        <h3>Donut Morango com leite ninho Brigadeiro branco</h3>
+        <p>Pedaços de morango com Leite ninho e cobertura de brigadeiro branco.</p>
+        <div class="price">R$16,00</div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="tab">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm" action="https://formspree.io/f/mpwonwdo" method="POST">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="mensagem" placeholder="Mensagem / Pedido" required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="successMessage" style="display:none; color:green; margin-top:10px;">Mensagem enviada com sucesso!</p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  © 2025 Sweet Heaven Donuts
+</footer>
+
+<!-- Donuts decorativos de fundo -->
+<div class="donut-bg donut1"></div>
+<div class="donut-bg donut2"></div>
+<div class="donut-bg donut3"></div>
+<div class="donut-bg donut4"></div>
+<div class="donut-bg donut5"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
